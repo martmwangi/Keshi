@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-    <script src="http://use.edgefonts.net/cardo:n4,i4,n7:all.js"></script>
+    <script src="http://use.edgefonts.net/cardo:n4,i4,n7:all;gruppo:n4:all.js"></script>
   </head>
   <body>
 <header>
-
-    <div class="nav-wrapper">
+    <div class="navbar-fixed">
+        <div class="nav-wrapper">
      <nav>
      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
@@ -30,7 +30,11 @@
     </nav>
     </div>
 
-</header>
+
+
+    </div>
+
+    </header>
 <!--Content for the landing page-->
 <div id="landing">
   <div class="container">
@@ -58,8 +62,13 @@
 </div>
 <!--Content for the Bio section-->
       <div id="Bio">
-
-
+          <div class="container">
+              <h2>BIO</h2>
+        <p>
+        Hi, call me Tess or Wangeci, girl with the big not so pretty laugh. I like to read(I have a knack for African Literature).<br> I am
+        a part-time hiker.<br> I love to travel.<br>I am a picture-taker.<br>And a Fake farmer.
+        </p>
+          </div>
       </div>
 
 <footer></footer>
@@ -68,5 +77,22 @@
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <script type="text/javascript" src="js/materialize.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script>
+        $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+        </script>
   </body>
 </html>
