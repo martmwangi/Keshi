@@ -16,11 +16,13 @@ nav ul li a{
 }
 .polaroid {
   position: relative;
-  width: 220px;
+  margin-left: -140px;
+
 }
 
 .polaroid img {
   border: 10px solid #fff;
+  border-radius: 5px;
   border-bottom: 45px solid #fff;
   -webkit-box-shadow: 3px 3px 3px #777;
      -moz-box-shadow: 3px 3px 3px #777;
@@ -34,4 +36,8 @@ nav ul li a{
   bottom: 0px;
   font: 400 18px/1 'Kaushan Script', cursive;
   color: #888;
+}
+.profile-img{
+    margin-top: 30px;
+    margin-left: -20px;
 }
