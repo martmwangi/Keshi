@@ -16,7 +16,8 @@ nav ul li a{
 }
 .polaroid {
   position: relative;
-  margin-left: -140px;
+  margin-left: -160px;
+  margin-top: 30px;
 
 }
 
@@ -40,4 +41,14 @@ nav ul li a{
 .profile-img{
     margin-top: 30px;
     margin-left: -20px;
+}
+/*Profile on the right of the landing page*/
+.profile-info{
+    margin-top: 150px;
+    margin-left: -10px;
+}
+h1{
+    color: white;
+    font-size: 60px;
+    font-family: cardo;
 }
