@@ -16,7 +16,8 @@ nav ul li a{
 #landing{
     height: 90vh;
     width: 100%;
-    background-color: #37474F;
+/*    background-color: #37474F;*/
+     background-color: #95A5A6;
     background-attachment: fixed;
     overflow: hidden;
 
