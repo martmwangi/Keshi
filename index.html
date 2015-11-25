@@ -5,15 +5,18 @@
     <title>Tess Wangeci</title>
     <link rel="stylesheet" href="/css/materialize.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
-    <link href="path/to/css/mfb.css" rel="stylesheet">
+    <link href="/material-floating-button/src/mfb.css.map" rel="stylesheet">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-     <link rel="import" href="css/mfb.scss">
     <script src="http://use.edgefonts.net/cardo:n4,i4,n7:all;gruppo:n4:all.js"></script>
   </head>
   <body>
+<!--      Header section-->
 <header>
-    <ul class="mfb-component--tl mfb-slidein" data-mfb-hover>
+    </header>
+<!--      Fot the floating action menu-->
+      <div id="menu">
+              <ul class="mfb-component--tl mfb-slidein" data-mfb-hover>
   <!-- the menu content -->
 </ul>
     <ul class="{{placement-class}} {{effect-class}}" {{hover/click-to-open}} {{menu-state}}>
@@ -36,7 +39,7 @@
   </li>
 </ul>
 
-    </header>
+      </div>
 <!--Content for the landing page-->
 <div id="landing">
   <div class="container">
@@ -144,7 +147,7 @@
 
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <script type="text/javascript" src="js/materialize.js"></script>
-<script type="text/javascript" src="js/mfb.js"></script>
+<script type="text/javascript" src="/material-floating-button/src/mfb.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script>
         $('a[href*=#]:not([href=#])').click(function() {
