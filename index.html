@@ -5,7 +5,7 @@
     <title>Tess Wangeci</title>
     <link rel="stylesheet" href="/css/materialize.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
-    <link href="/material-floating-button/src/mfb.css.map" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/mfb/src/mfb.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
     <script src="http://use.edgefonts.net/cardo:n4,i4,n7:all;gruppo:n4:all.js"></script>
@@ -15,10 +15,38 @@
 <header>
     </header>
 <!--      Fot the floating action menu-->
+
+<!--Content for the landing page-->
+<div id="landing">
+  <div class="container">
+      <div class="row">
+<!--          Where the profile image is-->
+          <div class="col s4 profile-img">
+              <div class="container">
+                   <div class="polaroid">
+                         <p>Wangeci Kariuki</p>
+                          <img src="assets/tdog.jpg" height="550px" width="450px" >
+                   </div>
+              </div>
+
+          </div>
+
+
+<!--          Where name and CV download button are-->
+
+          <div class="col s8 profile-info">
+              <div class="container ">
+                   <h1>Environment Scientist</h1>
+                  <button class="btn">CV</button>
+              </div>
+        </div>
+      </div>
+  </div>
+</div>
       <div id="menu">
-              <ul class="mfb-component--tl mfb-slidein" data-mfb-hover>
+          <ul class="mfb-component--tl mfb-slidein" data-mfb-hover>
   <!-- the menu content -->
-</ul>
+
     <ul class="{{placement-class}} {{effect-class}}" {{hover/click-to-open}} {{menu-state}}>
   <li class="mfb-component__wrap">
     <!-- the main menu button -->
@@ -39,32 +67,9 @@
   </li>
 </ul>
 
-      </div>
-<!--Content for the landing page-->
-<div id="landing">
-  <div class="container">
-      <div class="row">
-<!--          Where the profile image is-->
-          <div class="col s4 profile-img">
-              <div class="container">
-                   <div class="polaroid">
-                         <p>Wangeci Kariuki</p>
-                          <img src="assets/tdog.jpg" height="550px" width="450px" >
-                   </div>
-              </div>
+</ul>
 
-          </div>
-<!--          Where name and CV download button are-->
-
-          <div class="col s8 profile-info">
-              <div class="container ">
-                   <h1>Environment Scientist</h1>
-                  <button class="btn">CV</button>
-              </div>
-        </div>
       </div>
-  </div>
-</div>
 <!--Content for the Bio section-->
       <div id="Bio">
               <div class="container">
@@ -147,7 +152,7 @@
 
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <script type="text/javascript" src="js/materialize.js"></script>
-<script type="text/javascript" src="/material-floating-button/src/mfb.js"></script>
+<script type="text/javascript" src="node_modules/mfb/src/mfb.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script>
         $('a[href*=#]:not([href=#])').click(function() {
