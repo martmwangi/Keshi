@@ -44,33 +44,40 @@
   </div>
 </div>
       <div id="menu">
-          <ul class="mfb-component--tl mfb-slidein" data-mfb-toggle="hover" data-mfb-toggle="click" data-mfb-state="open">
+          <ul class="mfb-component--tl mfb-slidein" data-mfb-toggle="hover" data-mfb-toggle="click" data-mfb-state="closed">
   <!-- the menu content -->
 
     <ul class="{{placement-class}} {{effect-class}}" {{hover/click-to-open}} {{menu-state}}>
+
   <li class="mfb-component__wrap">
     <!-- the main menu button -->
-    <a data-mfb-label="{{the label text of the main button}}" class="mfb-component__button--main" href="#landing">
+    <a data-mfb-label="Home" class="mfb-component__button--main" href="#landing">
       <!-- the main button icon visibile by default -->
-      <i class="mfb-component__main-icon--resting {{icon-class}}"></i>
+      <i class="mfb-component__main-icon--resting {{icon-class}}">
+
+        </i>
       <!-- the main button icon visibile when the user is hovering/interacting with the menu -->
-      <i class="mfb-component__main-icon--active {{active-icon-class}}"></i>
+      <i class="mfb-component__main-icon--active {{active-icon-class}}">
+          </i>
     </a>
     <ul class="mfb-component__list">
       <!-- a child button, repeat as many times as needed -->
+
       <li>
-        <a href="#Bio" data-mfb-label="{{the label text of the a child button}}" class="mfb-component__button--child">
-          <i class="mfb-component__child-icon {{icon-class}}"></i>
+        <a data-mfb-label="Bio" class="mfb-component__button--child"  >
+          <i class="mfb-component__child-icon {{icon-class}}">
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="#000000" d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z" />
+</svg>
+
+            </i>
         </a>
       </li>
+
         <li>
-        <a href="#Contact" data-mfb-label="{{the label text of the a child button}}" class="mfb-component__button--child">
-          <i class="mfb-component__child-icon {{icon-class}}"></i>
-        </a>
-      </li>
-        <li>
-        <a href="link.html" data-mfb-label="{{the label text of the a child button}}" class="mfb-component__button--child">
-          <i class="mfb-component__child-icon {{icon-class}}"></i>
+        <a href="#Contact" data-mfb-label="Contact" class="mfb-component__button--child">
+          <i class="mfb-component__child-icon {{icon-class}}">
+            </i>
         </a>
       </li>
     </ul>
