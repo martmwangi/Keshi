@@ -44,13 +44,13 @@
   </div>
 </div>
       <div id="menu">
-          <ul class="mfb-component--tl mfb-slidein" data-mfb-hover>
+          <ul class="mfb-component--tl mfb-slidein" data-mfb-toggle="hover" data-mfb-toggle="click" data-mfb-state="open">
   <!-- the menu content -->
 
     <ul class="{{placement-class}} {{effect-class}}" {{hover/click-to-open}} {{menu-state}}>
   <li class="mfb-component__wrap">
     <!-- the main menu button -->
-    <a data-mfb-label="{{the label text of the main button}}" class="mfb-component__button--main">
+    <a data-mfb-label="{{the label text of the main button}}" class="mfb-component__button--main" href="#landing">
       <!-- the main button icon visibile by default -->
       <i class="mfb-component__main-icon--resting {{icon-class}}"></i>
       <!-- the main button icon visibile when the user is hovering/interacting with the menu -->
@@ -59,6 +59,16 @@
     <ul class="mfb-component__list">
       <!-- a child button, repeat as many times as needed -->
       <li>
+        <a href="#Bio" data-mfb-label="{{the label text of the a child button}}" class="mfb-component__button--child">
+          <i class="mfb-component__child-icon {{icon-class}}"></i>
+        </a>
+      </li>
+        <li>
+        <a href="#Contact" data-mfb-label="{{the label text of the a child button}}" class="mfb-component__button--child">
+          <i class="mfb-component__child-icon {{icon-class}}"></i>
+        </a>
+      </li>
+        <li>
         <a href="link.html" data-mfb-label="{{the label text of the a child button}}" class="mfb-component__button--child">
           <i class="mfb-component__child-icon {{icon-class}}"></i>
         </a>
