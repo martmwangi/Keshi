@@ -5,3 +5,6 @@ $(".button-collapse").sideNav();
   ];
   Materialize.scrollFire(options);
 //For the slider
+
+//Wow js
+new WOW().init();
